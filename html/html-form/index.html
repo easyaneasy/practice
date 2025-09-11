@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>*** HTML 믄서 폼 구조화 ***</h1>
+    <br><br>
+
+    <h1>1. 메모 작성 폼</h1>
+
+    <form action="#">
+        <label for="title">제목 : </label>
+        <input type="text" name="title" id="title" placeholder="메모 제목을 입력하세요.">
+        <br>
+        <label for="content">내용 : </label>
+        <textarea name="content" id="content" placeholder="메모 내용을 입력하세요."></textarea>
+        
+        <br><br>
+        <button>메모 저장</button>
+    </form>
+
+    <h1>2. 숙소 예약 정보 입력 폼</h1>
+
+    <h2>숙소 예약하기</h2>
+    
+    <form action="#">
+        <label for="checkin">체크인 : </label>
+        <input type="date" name="checkin" id="checkin">
+        <br>
+        <label for="checkout">체크아웃 : </label>
+        <input type="date" name="checkout" id="checkout">
+        <br>
+        <label for="adult">성인 : </label> 
+        <input type="number" name="adult" id="adult">
+        <br>
+        <label for="children">어린이 : </label>
+        <input type="number" name="children" id="children">
+        <br>
+        
+        <legend>선호 객실 타입</legend>
+
+        <input type="radio" name="roomtype" id="standard">
+        <label for="standard">스탠다드</label>
+
+        <input type="radio" name="roomtype" id="deluxe">
+        <label for="deluxe">디럭스</label>
+
+        <input type="radio" name="roomtype" id="Suite">
+        <label for="Suite">스위트</label>
+
+        <br>
+        <label for="request">요청사항 : </label>
+        <textarea name="request" id="request" placeholder="특별히 요청하고 싶은 내용을 적어주세요"></textarea>
+        
+        <br><br>
+        <button>예약하기</button>
+    </form>
+
+</body>
+</html>
