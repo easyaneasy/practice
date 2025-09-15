@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    margin: auto;
+    width: 80vw;
+    height: 80vh;
+    border: 2px dashed #000;
+
+    /* 아래에 적절한 flexbox 관련 속성과 값을 작성해서 문제 해결  */
+    
+    /* 주축 - 중앙 정렬 */
+    /* justify-content: center; */
+    /* 주축 - 양 끝 균등 정렬 */
+    /* justify-content: space-between; */
+    /* 주축 - 끝 정렬 */
+    /* justify-content: end; */
+    /* 균등한 여백 정렬 */
+    /* justify-content: space-around; */
+
+    /* 교차축 - 중앙 정렬 */
+    /* align-items: center;  */
+    /* 교차축 - 역방향 중앙정렬 */
+    /* align-items: center;
+    flex-direction: row-reverse; */
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 0.5rem;
+}
+.box-1 {
+    background-color: #60a5fa;
+
+    /* 플렉스 아이템 늘리기 */
+    flex: 1;
+}
+.box-2 {
+    background-color: #f87171;
+
+    /* 빨강색 박스 교차축 중앙정렬 */
+    /* align-self: center; */
+
+    /* 플렉스 아이템 늘리기 */
+    flex: 1;
+}
+.box-3 {
+    background-color: #34d399;
+
+    /* 플렉스 아이템 늘리기 */
+    flex: 1;
+}
+.box-4 {
+    background-color: #facc15;
+
+    /* 노란색 박스 교차축 끝 정렬 */
+    /* align-self: end; */
+
+    /* 플렉스 아이템 늘리기 */
+    flex: 2;
+}
