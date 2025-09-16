@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-introduction page</title>
+    <link rel="stylesheet" href="./style.css">
+    
+    <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        :root {
+        --primary-color: #61bf44;
+      }
+    </style>
+</head>
+<body>
+    <div class="h-auto min-h-screen w-full flex-col bg-white" style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
+        <div class="layout-container flex h-full grow flex-col">
+            <header class="sticky top-0 z-50 bg-white/80 flex items-center justify-between border-b border-solid border-b-gray-200 px-10 py-4">
+                <div class="header-div1">
+                    <h2 class="text-gray-800 text-xl font-bold ">eae's log</h2>
+                </div>
+                <div class="flex items-center gap-6">
+                    <nav class="flex items-center gap-6 text-sm font-medium text-gray-600">
+                        <!-- 마우스 커서를 가져다 대면 텍스트 색이 변하게 -->
+                        <a href="#" class="hover:text-[var(--primary-color)] transition-colors">Home</a>
+                        <a href="#" class="hover:text-[var(--primary-color)] transition-colors">About</a>
+                        <a href="#" class="hover:text-[var(--primary-color)] transition-colors">Blog</a>
+                        <a href="#" class="hover:text-[var(--primary-color)] transition-colors">Contact</a>
+                    </nav>
+                    <div class="flex items-center gap-2">
+                        <button class="flex h-10 w-10 items-center justify-center rounded-full text-gray-500 hover:bg-gray-100 hover:text-gray-800 transition-colors">
+                            <!-- 아이콘으로 표시 -->
+                            <span class="material-symbols-outlined text-2xl">search</span>
+                        </button>
+                        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-1 border-gray-400" style="background-image: url('./kitty.jpeg');"></div>
+                    </div>
+                </div>
+            </header>
+
+            <main class="flex flex-1 justify-center px-4 py-16 sm:px-6 lg:px-8">
+                <div class="layout-container flex w-full max-w-5xl flex-col items-center">
+                    <div class="flex w-full flex-col items-center gap-8 text-center">
+                        <div class="flex flex-col items-center gap-4">
+                            <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-40 h-40 shadow-lg border-1 border-gray-200" style="background-image: url('./kitty.jpeg');"></div>
+                            <div>
+                                <h1 class="text-gray-900 text-4xl font-bold tracking-tight py-2">easyaneasy</h1>
+                                <p class="text-gray-600 text-lg">Web Developer</p>
+                                <p class="text-gray-500 text-base">Based in Seoul</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 text-lg leading-relaxed max-w-2xl">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reprehenderit qui ullam illum delectus veniam saepe atque reiciendis, nostrum ipsa blanditiis iusto hic officiis consequuntur autem voluptates laborum fuga tenetur.
+                        </p>
+                    </div>
+
+                    <div class="w-full mt-16">
+                        <h2 class="text-center text-gray-900 text-3xl font-bold mb-8">Interests &amp; Hobbies</h2>
+                        <div class="flex justify-center gap-4 flex-wrap">
+
+                            <div class="flex items-center justify-center rounded-full bg-gray-100 px-5 py-2 text-gray-700 font-medium transition-colors hover:bg-[var(--primary-color)] hover:text-white cursor-pointer">
+                                Photography
+                            </div>
+                            <div class="flex items-center justify-center rounded-full bg-gray-100 px-5 py-2 text-gray-700 font-medium transition-colors hover:bg-[var(--primary-color)] hover:text-white cursor-pointer">
+                                Travel
+                            </div>
+                            <div class="flex items-center justify-center rounded-full bg-gray-100 px-5 py-2 text-gray-700 font-medium transition-colors hover:bg-[var(--primary-color)] hover:text-white cursor-pointer">
+                                Reading
+                            </div>
+                            <div class="flex items-center justify-center rounded-full bg-gray-100 px-5 py-2 text-gray-700 font-medium transition-colors hover:bg-[var(--primary-color)] hover:text-white cursor-pointer">
+                                Cooking
+                            </div>
+                            <div class="flex items-center justify-center rounded-full bg-gray-100 px-5 py-2 text-gray-700 font-medium transition-colors hover:bg-[var(--primary-color)] hover:text-white cursor-pointer">
+                                Watching Sports
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full mt-16">
+                        <h2 class="text-center text-gray-900 text-3xl font-bold mb-8">Connect with Me</h2>
+                        <div class="flex justify-center gap-6">
+                            <a href="#" class="flex flex-col items-center gap-2 text-gray-600 hover:text-[var(--primary-color)] transition-colors group">
+                                <div class="rounded-full bg-gray-100 p-4 group-hover:bg-[var(--primary-color)] group-hover:text-white transition-colors">
+                                    <!-- 트위터 아이콘 -->
+                                    <svg fill="currentColor" height="28px" viewBox="0 0 256 256" width="28px" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
+                                    </svg>
+                                </div>
+                                <p class="text-sm font-medium">Twitter</p>
+                            </a>
+
+                            <a href="#" class="flex flex-col items-center gap-2 text-gray-600 hover:text-[var(--primary-color)] transition-colors group">
+                                <div class="rounded-full bg-gray-100 p-4 group-hover:bg-[var(--primary-color)] group-hover:text-white transition-colors">
+                                    <!-- 인스타그램 아이콘 -->
+                                    <svg fill="currentColor" height="28px" viewBox="0 0 256 256" width="28px" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path>
+                                    </svg>
+                                </div>
+                                <p class="text-sm font-medium">Instagram</p>
+                            </a>
+
+                            <a href="#" class="flex flex-col items-center gap-2 text-gray-600 hover:text-[var(--primary-color)] transition-colors group">
+                                <div class="rounded-full bg-gray-100 p-4 group-hover:bg-[var(--primary-color)] group-hover:text-white transition-colors">
+                                    <!-- 깃허브 아이콘 -->
+                                    <svg viewBox="0 0 24 24" width="28px" height="28px" fill="currentColor" role="img" aria-label="GitHub" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 .296C5.373.296 0 5.67 0 12.297c0 5.302 3.438 9.8 8.205 11.387.6.111.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.725-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.304.762-1.604-2.665-.303-5.467-1.333-5.467-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 0 1 3.003-.404c1.02.005 2.047.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.874.12 3.176.77.84 1.235 1.911 1.235 3.221 0 4.61-2.807 5.625-5.479 5.921.43.372.815 1.102.815 2.222 0 1.604-.015 2.896-.015 3.286 0 .319.216.694.825.576C20.565 22.092 24 17.597 24 12.297 24 5.67 18.627.296 12 .296z"></path>
+                                    </svg>
+                                </div>
+                                <p class="text-sm font-medium">GitHub</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="w-full mt-16">
+                        <h2 class="text-center font-bold text-3xl text-gray-900 mb-8">Blog Focus</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div class="flex flex-col border border-gray-200 rounded-lg gap-4 bg-white p-6 transition-shadow hover:shadow-lg">
+                                <!-- 이미지1 -->
+                                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-md h-12 w-12" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDSVgiSlo3v97kq3KlY2VChfxEeMZ7rc3JmE7BR0gZ-cHGwv6vz3kdaDF6M3o7sJdd8RB4HANPny_Jl8Be_fUwtS27rrhyXTuRQNDGZAqkLnI4sh4CpoRbot_bNllLSdIdrlp37hKjoQ0cnN_JvMdVp9iFWrjdvsWqlqLE1xJbqGwArRcMOdGn5v-aW15ff6rXP-dmDO9_G20Bq4kkZLvUeXRnprYtnR1YABCYTU-sC71ePYr6x0ZQX6Q8E86g9VwXrv9Eh8JyzeU5X");'></div>
+                                <div class="flex flex-col gap-2">
+                                    <h3 class="text-gray-900 text-xl font-bold">Travel Diaries</h3>
+                                    <p class="text-gray-600 text-base">Personal stories and tips from my travel adventures.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-col border border-gray-200 rounded-lg gap-4 bg-white p-6 transition-shadow hover:shadow-lg">
+                                <!-- 이미지2 -->
+                                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-md h-12 w-12" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBlK49ebIEjIiWQ01W-73FyQ-A0rriVOw6VPLupn-k64qlomVO7_Qza4ruvIrdloJ6igg4FJ_lekZq1V0grA85Xk8Uzd3VRKDG8nzGMbGvo6852C7XVGdMY5LLQQd61ogw93p0emMUmGe4Sg5oIQ0ZbtWiY_oYp2V1solG5pfA1lx83F8Oxj-ulW07RuEiiVXNCgQin52cRhioBdJEtwoSbcn_MKA3EIVAiGaXnZn0ThNuGrpBWVCZiizj1IUlfyhrusU6ZJ0gLg_hi");'></div>
+                                <div class="flex flex-col gap-2">
+                                    <h3 class="text-gray-900 text-xl font-bold">City Explorations</h3>
+                                    <p class="text-gray-600 text-base">Discovering hidden gems and vibrant cultures in urban settings.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex flex-col border border-gray-200 rounded-lg gap-4 bg-white p-6 transition-shadow hover:shadow-lg">
+                                <!-- 이미지3 -->
+                                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-md h-12 w-12" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAtnPuRq3_CdxOLhR55QbUjhi2EY5xJ7mIVDM8lFrwge14VQiMt-rnHnb2QVBkM_cn-mOFXUj9EhB9EY64Kkfqrp0xGsVq2m5WQh2vMEo3IdLM8X0LSS8RjyimJY0r9T2kYpaYmOQ09xNcGkPDCCORfsI-enhU_BTs3pO7TBmvEAMpir5EePF_R4SGRAW9HBElS5CdXK_7okL-3zj1RC5-LA-0SNIXlzy-DLXmy5pMXJL9ZDS40EFK__duDhRWGLhTkM2lqas7GHa8r");'></div>
+                                <div class="flex flex-col gap-2">
+                                    <h3 class="text-gray-900 text-xl font-bold">Nature Escapes</h3>
+                                    <p class="text-gray-600 text-base">Immersive experiences in nature's serene landscapes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="w-full bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+                <div class="mx-auto max-w-5xl text-center">
+                    <div class="flex justify-center gap-8 mb-8">
+                        <a href="#" class="text-gray-600 hover:text-[var(--primary-color)] transition-colors">About</a>
+                        <a href="#" class="text-gray-600 hover:text-[var(--primary-color)] transition-colors">Contact</a>
+                        <a href="#" class="text-gray-600 hover:text-[var(--primary-color)] transition-colors">Privacy Policy</a>
+                    </div>
+                    
+                    <!-- 아이콘들 -->
+                    <div class="flex justify-center gap-6 mb-8">
+                        <a class="text-gray-500 hover:text-[var(--primary-color)] transition-colors" href="#">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46,6.54a.5.5,0,0,0-.39-.39C20.89,5.77,13,5.32,13,5.32S5.11,5.77,3.93,6.15a.5.5,0,0,0-.39.39C3.16,7.71,2.68,12,2.68,12s.48,4.29,1.86,5.46a.5.5,0,0,0,.39.39c1.18.38,8.07.83,8.07.83s7.89-.45,9.07-.83a.5.5,0,0,0,.39-.39c1.38-1.17,1.86-5.46,1.86-5.46S22.84,7.71,22.46,6.54Zm-12,8.13V8.33l6.5,3.75Z"></path>
+                            </svg>
+                        </a>
+                        <a class="text-gray-500 hover:text-[var(--primary-color)] transition-colors" href="#">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2.163c3.204,0,3.584,0.012,4.85.07,3.252.148,4.771,1.691,4.919,4.919.058,1.265.07,1.646.07,4.85s-0.012,3.584-0.07,4.85c-0.148,3.227-1.669,4.771-4.919,4.919-1.266.058-1.646.07-4.85.07s-3.584-0.012-4.85-0.07c-3.252-0.148-4.771-1.691-4.919-4.919-0.058-1.265-0.07-1.646-0.07-4.85s0.012-3.584,0.07-4.85c0.148-3.227,1.669-4.771,4.919-4.919,1.266-.058,1.646-.07,4.85-.07M12,0C8.74,0,8.333.015,7.053.072,2.695.272.273,2.69.073,7.052.015,8.333,0,8.74,0,12s.015,3.667.072,4.947c.2,4.358,2.618,6.78,6.98,6.98,1.267.058,1.667.072,4.947.072s3.68-.015,4.947-.072c4.362-.2,6.782-2.618,6.98-6.98.058-1.267.072-1.667.072-4.947s-.015-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98C15.667.015,15.26,0,12,0Zm0,5.838a6.162,6.162,0,1,0,0,12.324,6.162,6.162,0,0,0,0-12.324M12,16a4,4,0,1,1,0-8,4,4,0,0,1,0,8Zm4.965-10.405a1.44,1.44,0,1,1,0-2.88,1.44,1.44,0,0,1,0,2.88Z"></path>
+                            </svg>
+                        </a>
+                        <a class="text-gray-500 hover:text-[var(--primary-color)] transition-colors" href="#">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333,1.115-1.333h2.885v-5h-3.808c-3.596,0-5.192,1.583-5.192,4.615v3.385z"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <p class="text-gray-500 text-sm">
+                        © 2025 easyaneasy. All rights reserved.
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
