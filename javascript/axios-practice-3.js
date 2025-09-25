@@ -117,12 +117,18 @@ async function searchUser(name){
 ]
 */
 
-// TODO: 10번 사용자의 할 일 (todo) 목록 조회
+// TODO: 9번 사용자의 할 일 (todo) 목록 조회
 // 아래 요구사항을 참고하여 코드를 작성한다
-// 1. 10번 사용자의 할 일 (todo) 목록 조회
+// 1. 9번 사용자의 할 일 (todo) 목록 조회
 // 2. 응답 데이터 객체에서 todos 배열을 찾아서 출력
 
-// 넘어가기
+async function userTodoList(userId){
+  const res = await axios.get(`https://dummyjson.com/todos/user/${userId}`);
+  const todoList = res.data.todos;
+  console.log(todoList);
+}
+
+userTodoList(9);
 
 /* 출력 결과
 [
@@ -156,7 +162,7 @@ async function commentList(){
 
     console.log(result);
 }
-commentList();
+//commentList();
 
 /* 출력 결과
 [
