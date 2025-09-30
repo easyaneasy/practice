@@ -6,6 +6,8 @@ import Footer from './components/Footer'
 import ProductContainer from './components/ProductCard/ProductContainer'
 import UserCardContainer from './components/UserCard/UserCardContainer'
 
+import Carts from './components/Carts/Carts'
+
 export default function App() {
   return (
     <>
@@ -16,8 +18,10 @@ export default function App() {
       <Main></Main>
       <Footer></Footer> */}
       
-      <ProductContainer></ProductContainer>
-      <UserCardContainer></UserCardContainer>
+      {/* <ProductContainer></ProductContainer>
+      <UserCardContainer></UserCardContainer> */}
+
+      <Carts></Carts>
       
     </>
   );
