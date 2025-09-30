@@ -3,15 +3,22 @@ import Header from './components/Header'
 import Main from './components/Main'
 import Footer from './components/Footer'
 
+import ProductContainer from './components/ProductCard/ProductContainer'
+import UserCardContainer from './components/UserCard/UserCardContainer'
+
 export default function App() {
   return (
     <>
       {/* <div>
         <h1>Hello World</h1>
       </div> */}
-      <Header></Header>
+      {/* <Header></Header>
       <Main></Main>
-      <Footer></Footer>
+      <Footer></Footer> */}
+      
+      <ProductContainer></ProductContainer>
+      <UserCardContainer></UserCardContainer>
+      
     </>
   );
 }
