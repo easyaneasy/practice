@@ -8,6 +8,17 @@ import UserCardContainer from './components/UserCard/UserCardContainer'
 
 import Carts from './components/Carts/Carts'
 
+import StringState from './components/State/StringState'
+import NumberState from './components/State/NumberState'
+import ObjectState from './components/State/ObjectState'
+import ArrayState from './components/State/ArrayState'
+
+import Counter from './components/Counter/Counter'
+import Calculator from './components/Calculator/Calculator'
+import QuoteContainer from './components/DummyJSON/QuoteContainer'
+
+QuoteContainer
+
 export default function App() {
   return (
     <>
@@ -21,8 +32,21 @@ export default function App() {
       {/* <ProductContainer></ProductContainer>
       <UserCardContainer></UserCardContainer> */}
 
-      <Carts></Carts>
-      
+      {/* <Carts></Carts> */}
+
+      {/* state 실습 1 */}
+      {/* <StringState></StringState>
+      <NumberState></NumberState>
+      <ObjectState></ObjectState>
+      <ArrayState></ArrayState> */}
+
+      {/* state 실습 2 */}
+      {/* <Counter></Counter>
+      <Calculator></Calculator> */}
+
+      {/* state 실습 3 */}
+      <QuoteContainer></QuoteContainer>
+
     </>
   );
 }
